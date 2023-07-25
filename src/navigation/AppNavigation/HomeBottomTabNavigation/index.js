@@ -15,13 +15,13 @@ const HomeBottomNavigation = props => {
       <Tab.Navigator
         initialRouteName="Menu"
         screenOptions={({navigation}) => ({
-          tabBarIconStyle: {zIndex: 100},
+          tabBarIconStyle: {display: 'none'},
           tabBarStyle: {
             height: Platform.OS === 'ios' ? (height > 800 ? 80 : 60) : 70,
           },
           tabBarShowLabel: true,
           headerShown: false,
-          tabBarLabelStyle: {fontSize: 14},
+          tabBarLabelStyle: {fontSize: 20, fontWeight: 'bold'},
           navigation,
         })}>
         <Tab.Screen

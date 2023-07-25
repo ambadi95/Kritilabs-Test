@@ -37,7 +37,7 @@ const LoginPage = ({navigation}) => {
     });
     setError({...error});
     if (valid) {
-      navigation.navigate(SCREENS.HOMEPAGE);
+      navigation.replace(SCREENS.HOMEPAGE);
     }
   };
 
@@ -70,10 +70,10 @@ const LoginPage = ({navigation}) => {
           isCaps={true}
           onPress={login}
         />
-        <View style={styles.footerContainer}>
-          <Text>© Copyright All rights resevred</Text>
-        </View>
       </KeyboardAwareScrollView>
+      <View style={styles.footerContainer}>
+        <Text>© Copyright All rights resevred</Text>
+      </View>
     </View>
   );
 };
